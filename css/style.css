@@ -14,6 +14,7 @@ html {
 
 header, section, nav, a, div, p, img {
     border: 2px solid red;
+    padding: 8px;
 }
 
 /* custom variables______________________________________________________ */
@@ -24,4 +25,6 @@ header, section, nav, a, div, p, img {
 	--color-footer: #1a1a1a;
 	--color-eco: #008000;
 }
+
+/* assets __________________________________________________________________*/
 
