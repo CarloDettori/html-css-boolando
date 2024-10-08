@@ -1,0 +1,27 @@
+/* reset__________________________________________________________________ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* strumenti _____________________________________________________________*/
+
+header, section, nav, a, div, p, img {
+    border: 2px solid red;
+}
+
+/* custom variables______________________________________________________ */
+
+:root {
+	--color-header: #ff6900;
+	--color-discount: #ff0000;
+	--color-footer: #1a1a1a;
+	--color-eco: #008000;
+}
+
