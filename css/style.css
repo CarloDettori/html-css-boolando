@@ -12,9 +12,8 @@ html {
 
 /* strumenti _____________________________________________________________*/
 
-header, section, nav, a, div, p, img {
-    border: 2px solid red;
-    padding: 8px;
+header, footer, section, nav, a, div, p, img {
+    border: 1px solid red;
 }
 
 /* custom variables______________________________________________________ */
@@ -27,4 +26,184 @@ header, section, nav, a, div, p, img {
 }
 
 /* assets __________________________________________________________________*/
+
+header {
+    background-color: var(--color-header);
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+
+footer {
+    background-color: var(--color-footer);
+    color: white;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+i {
+    color: white;
+}
+
+i:hover {
+    transform: scale(1.5);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#logo {
+    height: 40px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.prod {
+    font-weight: bold;
+}
+
+.pre {
+    font-weight: bold;
+    color: red;
+}
+
+.sco {
+    display: inline;
+    background-color: var(--color-discount);
+    color: white;
+}
+
+.sco€ {
+    text-decoration: line-through;
+}
+
+.eco {
+    display: inline;
+    background-color: var(--color-eco);
+}
+
+h2, h1 {
+    font-size: 80%;
+}
+
+div.info>a {
+    font-size: 50%;
+}
+
+
+
+/* flex ____________________________________________________________*/
+
+.info {
+    display: flex;
+    gap: 10px;
+    align-self: flex-end;
+}
+
+.coda {
+    display: flex;
+    align-content: center;
+}
+
+.al-it-center {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col {
+    width: calc((100% - 10px) / 3);
+    justify-content: space-between;
+}
+
+.money {
+    display: flex;
+    gap: 20px;
+}
+
+#social-dad {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.har {
+    color: grey;
+    display: inline-block;
+}
+
+
+/* positioning ________________________________________________*/
+
+
+.img-bg {
+    
+}
+
+.img-bg {
+    position: relative;
+    display: block,
+}
+
+.front {
+    width: 100%;
+    display: block;
+    z-index: 900;
+    position: absolute;
+    size: 20%;
+}
+
+.front:hover {
+    z-index: 700;
+}
+
+.har {
+    z-index: 1100;
+}
+
+.back {
+    width: 100%;
+    display: block;
+    z-index: 800;
+    position: absolute;
+}
+/* bonus_______________________________________________________*/
+
+
+/*
+.har:hover {
+    color: red;
+    cursor: pointer;
+    transform: scale(1.5);
+}
+*/
+
+
 
