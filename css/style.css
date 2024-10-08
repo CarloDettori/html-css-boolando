@@ -1,4 +1,4 @@
-/* reset__________________________________________________________________ */
+/* reset_________________________________________________ */
 * {
     margin: 0;
     padding: 0;
@@ -9,14 +9,19 @@ html {
     scroll-behavior: smooth;
 }
 
+/* img {
+    size: 100%;
+} */
+
 
 /* strumenti _____________________________________________________________*/
 
-header, footer, section, nav, a, div, p, img {
-    border: 1px solid red;
+header, footer, section, nav, a, div, p, img, h1, h2 {
+    /*border: 1px solid red; */
+    padding: 5px;
 }
 
-/* custom variables______________________________________________________ */
+/* custom variables___________________________________________________ */
 
 :root {
 	--color-header: #ff6900;
@@ -25,7 +30,7 @@ header, footer, section, nav, a, div, p, img {
 	--color-eco: #008000;
 }
 
-/* assets __________________________________________________________________*/
+/* assets _____________________________________________________________*/
 
 header {
     background-color: var(--color-header);
@@ -36,6 +41,9 @@ header {
 
 }
 
+main{
+    padding-top: 40px;
+}
 
 footer {
     background-color: var(--color-footer);
@@ -87,10 +95,13 @@ i:hover {
     color: red;
 }
 
-.sco {
+.sco, .eco {
     display: inline;
-    background-color: var(--color-discount);
     color: white;
+}
+
+.sco {
+    background-color: var(--color-discount);
 }
 
 .sco€ {
@@ -98,7 +109,6 @@ i:hover {
 }
 
 .eco {
-    display: inline;
     background-color: var(--color-eco);
 }
 
@@ -111,7 +121,6 @@ div.info>a {
 }
 
 
-
 /* flex ____________________________________________________________*/
 
 .info {
@@ -120,9 +129,10 @@ div.info>a {
     align-self: flex-end;
 }
 
-.coda {
+#coda {
     display: flex;
-    align-content: center;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .al-it-center {
@@ -136,11 +146,11 @@ div.info>a {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 30px 0px;
 }
 
 .col {
-    width: calc((100% - 10px) / 3);
-    justify-content: space-between;
+    width: calc((100% - 15px) / 3);
 }
 
 .money {
@@ -150,7 +160,7 @@ div.info>a {
 
 #social-dad {
     display: flex;
-    justify-content: flex-end;
+    align-items: flex-end;
     gap: 5px;
 }
 
@@ -160,42 +170,68 @@ div.info>a {
 }
 
 
-/* positioning ________________________________________________*/
+/* positioning ______________________________________________*/
 
-
-.img-bg {
-    
+.win {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
 }
 
-.img-bg {
-    position: relative;
-    display: block,
+.front, .back {
+    position: absolute; */
+    display: block;
+    width: 100%;
 }
 
 .front {
-    width: 100%;
-    display: block;
-    z-index: 900;
-    position: absolute;
-    size: 20%;
-}
-
-.front:hover {
     z-index: 700;
 }
 
-.har {
-    z-index: 1100;
+.back {
+    z-index: 600;
 }
 
-.back {
-    width: 100%;
-    display: block;
+.front:hover {
+    z-index: 500;
+}
+
+.back:hover {
     z-index: 800;
+    
+}
+
+.sco, .eco, .har{
     position: absolute;
 }
-/* bonus_______________________________________________________*/
 
+.har {  
+    top: 15px;
+    right: 0px;
+    transform: translateX(-100%);
+    font-size: 150%; 
+}
+
+.sco, .eco, {
+    bottom: 10px;
+    transform: translateY(-100%);
+}
+
+.sco {
+    left: 30px; 
+}
+
+.eco {
+    left: 90px;
+}
+
+.har .eco .sco {   
+    z-index: 1000;
+}
+
+
+/* bonus____________________________________________________*/
 
 /*
 .har:hover {
