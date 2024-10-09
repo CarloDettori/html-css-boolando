@@ -176,9 +176,10 @@ div.info>a {
 .win {
     position: relative;
     width: 100%;
+    z-index: 730;
 }
 
-.front {
+.back {
     position: absolute;
     top: 0;
     left: 0;
@@ -186,17 +187,17 @@ div.info>a {
     width: 100%;
 }
 
-.front {
-    z-index: 700;
-}
-
-.win:hover img.front {
+.win:hover img.back  {
     display: block;
+    z-index: 750;
 }
 
 
-.sco, .eco, .har{
+.sco, .eco, .har {
     position: absolute;
+}
+.sco, .eco, .har {   
+    z-index: 800;
 }
 
 .har {  
@@ -219,9 +220,7 @@ div.info>a {
     left: 90px;
 }
 
-.har .eco .sco {   
-    z-index: 1000;
-}
+
 
 
 /* bonus____________________________________________________*/
